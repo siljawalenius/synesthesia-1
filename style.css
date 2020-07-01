@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,300;0,400;0,700;0,800;1,400;1,700&display=swap');
+
+:root{
+    --teal:#05615B;
+    --blue:#D4E3DE;
+    --orange:#D4864E;
+    --yellow: #EAD1A0;
+    --waterblue:#EEFAF6;
+}
+
+body{
+    font-family: 'Muli', sans-serif;
+
+    font-size:18px;
+    font-weight:700;
+}
+
+h1{
+    font-size: 48px;
+    font-weight:700;
+}
+
+a{
+    text-decoration:none;
+    color:#000000;   
+}
+
+section{
+    width:100%;
+    height:100vh;
+}
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+
+
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+
+    width:100%;
+
+    padding: 28px 78px;
+}
+
+header h1{
+    justify-self: center;
+}
+
+header .title{
+    display: none;
+}
+
+
+header .logo{
+    max-width:40px;
+    cursor:pointer;
+}
+
+nav a:last-child{
+    margin-left:100px;
+}
+
+section.blue{
+    background-color: var(--waterblue); 
+}
+
+.hero h1{
+    position: relative;
+
+    width: fit-content;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+
+
+section.shop, section.guides{
+    display:flex;
+    align-content:center;
+    align-items:center;
+    justify-content:center;
+    flex-direction:row;
+}
+
+div.images{
+    display:flex;
+    flex-direction:row;
+}
+
+section.shop .images a img{
+    max-height:468px;
+    margin-left: 87px;
+}
+
+section.shop .images a:first-child img{
+    margin-left: 0px;
+}
+
+.guide-container{
+    display:flex;
+    flex-direction:row;
+}
+
+section.guides .guide-container a {
+    margin-left: 77px;
+}
+
+section.guides .guide-container a img{
+    margin-bottom: 65px;
+}
+
+section.guides .guide-container a:first-child {
+    margin-left: 0px;
+}
+
+img.vertical{
+    transform: rotate(90deg);
+}
+
+img.flip{
+    transform: rotate(180deg);
+}
+
+section.guides .guide-container a {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+
+section.contact{
+    background-color: var(--blue);
+}
+
+section.contact .map{
+    position:relative;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+
+    max-height: 580px;
+}
