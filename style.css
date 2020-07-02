@@ -126,8 +126,10 @@ height:8150px;
 }
 
 section.sun .sunMessage{
-    position:relative;
+    position:fixed;
     display: inline-block;
+
+
 
     top:50%;
     left:50%;
