@@ -84,7 +84,7 @@ section.hero{
     background-size: 100% auto;
     background-position-y: 7em;
 
-    display:none;
+    
 }
 
 .hero h1 {
@@ -120,6 +120,7 @@ section.hero .surfboard {
 
 
 section.sun{
+  display:none;
 
 height:8150px;
 
@@ -189,7 +190,7 @@ section.sun div.sand{
 section.shop{
     position: relative;
 
-   
+   background-color: #ffffff;
 }
 
 div.images {
@@ -287,7 +288,9 @@ section.shop .free.dots{
 section.guides {
 
 
-    display: none;
+  background-color: white;
+
+    display:flex;
     align-content: center;
     align-items: center;
     justify-content: center;
@@ -326,16 +329,22 @@ section.guides .guide-container a {
 }
 
 section.contact {
-
-    display:none;
+  
   background-color: var(--blue);
 }
 
 section.contact .map {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
 
   max-height: 580px;
+}
+
+section.contact .title{
+  text-align: center;
+  padding-top: 50px;
+
+}
+
+section.contact .title h2{
+  margin-top:30px;
 }

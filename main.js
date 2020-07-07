@@ -12,10 +12,6 @@
 
     const test = sunSection.querySelector("span.a")
 
-    test.style.left = (radius)+"px";
-    test.style.bottom = ((window.innerHeight/100)*30 + sun.getBoundingClientRect().height /2)+ "px"
-    test.style.position = "fixed"
-
     sun.style.transformOrigin = `${radius}px ${sun.getBoundingClientRect().height /2}px`;
 
 
@@ -25,11 +21,14 @@ document.addEventListener("scroll", () =>{
     pixels = window.pageYOffset;
     //sun.style.left = circleCenter + radius * (Math.cos(pixels/1000)) + "px"
     //sun.style.top = radius * Math.sin(pixels/1000) + "px"
+    if((pixels/40) < 180){
+        sun.style.transform = `rotate(${pixels/40}deg)`
+        console.log(pixels/40)
+    }
 
-   
-    sun.style.transform = `rotate(${pixels/40}deg)`
+    //statements for diff sun messages can go here
+    
 
-    console.log(pixels/40)
 
 })
 
