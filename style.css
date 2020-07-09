@@ -334,9 +334,13 @@ section.contact {
 }
 
 section.contact .map {
-
-
   max-height: 580px;
+
+  position:relative;
+  top: 50%;
+  left: 50%;
+
+  transform:translate(-50%, 0);
 }
 
 section.contact .title{
@@ -347,4 +351,13 @@ section.contact .title{
 
 section.contact .title h2{
   margin-top:30px;
+}
+
+
+section.insta{
+  display:flex;
+  flex-direction:column;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
 }
