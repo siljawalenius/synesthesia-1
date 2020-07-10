@@ -353,11 +353,37 @@ section.contact .title h2{
   margin-top:30px;
 }
 
-
 section.insta{
+  position:relative;
+}
+
+section.insta .content{
+  width:100vw;
+  min-height:100vh;
   display:flex;
   flex-direction:column;
   align-content: center;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+
+  position: relative;
+  top:0;
+  left:0;
+  z-index:2;
+}
+
+div.instafeed img{
+  margin: 0 15px 0 15px;
+}
+
+section.insta .water{
+  width:100vw;
+  position: absolute;
+  bottom:0;
+  left:0;
+  z-index:0;
+}
+
+section.insta .water .wave{
+  width:100vw;
 }
