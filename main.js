@@ -15,7 +15,7 @@
     sun.style.transformOrigin = `${radius}px ${sun.getBoundingClientRect().height /2}px`;
 
 
-
+//im weirdlt really busy rn now lol 
 
 document.addEventListener("scroll", () =>{
     pixels = window.pageYOffset;
